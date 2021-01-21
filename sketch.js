@@ -59,4 +59,13 @@ function draw(){
   sling.display();
 }
 
+function mousePressed(){
+  Matter.Body.setPosition(bird.body,{x:mouseX, y:mouseY });
+}
+
+function mouseReleased(){
+
+  sling.fly();
+}
+
 
